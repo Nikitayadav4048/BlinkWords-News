@@ -1,0 +1,115 @@
+.calendar{
+    width: 100%;
+    min-width: 28rem;
+    height: calc(55% - 2rem);
+    background-color: #111214;
+    border-radius: 1rem; 
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    color: #ddd;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.calendar-header h3 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2.5rem;
+    letter-spacing: 0.1rem;
+    color: #ddd;
+}
+
+.calendar-header i {
+    font-size: 2.5rem;
+    color: #b88efc;
+}
+
+.current-date {
+    margin-bottom: 2rem;
+}
+
+.date-display {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.day {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #b88efc;
+    line-height: 1;
+}
+
+.month-year {
+    display: flex;
+    flex-direction: column;
+}
+
+.month {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.year {
+    font-size: 1.4rem;
+    color: #bbb;
+}
+
+.mini-calendar {
+    flex: 1;
+}
+
+.calendar-nav {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0.2rem;
+}
+
+.day-header {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #b88efc;
+    padding: 0.5rem;
+}
+
+.calendar-day {
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+.calendar-day.active {
+    color: #ddd;
+}
+
+.calendar-day.inactive {
+    color: transparent;
+}
+
+.calendar-day.today {
+    background-color: #b88efc;
+    color: #000;
+    font-weight: bold;
+}
+
+.calendar-day.active:hover {
+    background-color: rgba(184, 142, 252, 0.2);
+}

@@ -1,0 +1,114 @@
+.myblogs {
+    width: clamp(20rem, 27cqi, 28%);
+    height: 100%;
+    background-color: #111214;
+    border-radius: 1rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    color: #ddd;
+}
+
+.blogs-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.blogs-header h3 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2.5rem;
+    letter-spacing: 0.1rem;
+    color: #ddd;
+}
+
+.blogs-header i {
+    font-size: 2.5rem;
+    color: #b88efc;
+}
+
+.blogs-list {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    overflow-y: auto;
+    margin-bottom: 2rem;
+}
+
+.blog-item {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: rgba(184, 142, 252, 0.1);
+    border-radius: 0.8rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.blog-item:hover {
+    background-color: rgba(184, 142, 252, 0.2);
+}
+
+.blog-item img {
+    width: 6rem;
+    height: 6rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    flex-shrink: 0;
+}
+
+.blog-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex: 1;
+}
+
+.blog-content h4 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #fff;
+    line-height: 1.3;
+}
+
+.blog-content p {
+    font-size: 1.2rem;
+    color: #bbb;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.blog-date {
+    font-size: 1.1rem;
+    color: #b88efc;
+    font-weight: 500;
+}
+
+.add-blog-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    padding: 1rem;
+    background-color: #b88efc;
+    color: #000;
+    border: none;
+    border-radius: 0.8rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-blog-btn:hover {
+    background-color: #a374f0;
+}
+
+.add-blog-btn i {
+    font-size: 1.6rem;
+}
